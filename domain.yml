@@ -1,0 +1,87 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- mood_sarcasm:
+    use_entities: true
+- mood_pressured:
+    use_entities: true
+- mood_share:
+    use_entities: true
+entities:
+- greeting
+- goodbyes
+- happy mood
+- sad mood
+- deny
+- agree
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you feeling today?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_will_that_help:
+  - text: 'Fair, lol. Seriously, tho: it is completely fine to feel overwhelmed at work. Everyone that I know had this at some point in their lives. What I do when I feel that way is to make precise planning for every day and trying to get my sleep schedule fixed. Do u think that might help u?'
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  - text: Goodluck :)
+  - text: Bye-bye!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_that_is_what_she_said_meme:
+  - image: https://i2.wp.com/www.coopers-seafood.com/wp-content/uploads/2019/12/thats-what-she-said-sticker.png?fit=600%2C600&ssl=1
+    text: Feeling overwhelmed is completely normal. A lot of people I know feel overwhelmed because they struggle with work/life balance. When I feel stressed, I usually take an evening completely off to Netflix & chill.  I just try not to make it hard on myself
+  utter_chandler_meme:
+  - image: https://imgix.bustle.com/rehost/2016/9/13/ad641958-cb54-42aa-b7cc-be3df328c51e.png?w=800&fit=crop&crop=faces&auto=format%2Ccompress
+    text: Oh man, could you BE any busier?
+  utter_what_happened:
+  - text: I am sorry to hear that. Work can be stressful indeed. What happened?
+  utter_long_sympathized:
+  - text: I feel overwhelmed too sometimes...I remember back in my college days, I had to prepare lots of presentations and essays. But the most stressful thing was the tests. A lot of people feel pressure at work. Ur feelings r totally valid.
+  utter_sympathized:
+  - text: I understand. Ur feelings are totally valid.
+  utter_what_will_help:
+  - text: Oh :( okay. What do u think will help?
+  - text: What do u think might help u to feel better?
+  utter_welcome:
+  - text: Always welcome :) Is there anything else u want to discuss?
+  utter_more_details:
+  - text: Let's go into more details here.
+  - text: Tell me more.
+  - text: Could u specify that?
+  - text: Can u tell me more?
+  utter_will_u_handle:
+  - text: Do u feel that u will be able to handle the pressure eventually?
+  utter_why_cant_u_handle:
+  - text: Why do u think u would not be able to handle that?
+  utter_ask_if_feel_better:
+  - text: U feel better?
+  - text: Do u feel better?
+  utter_short_sympathize:
+  - text: I understand. Ur feelings are totally valid.
+  - text: I see
+  - text: I am so sorry :(
+actions: []
+forms: {}
+e2e_actions: []
