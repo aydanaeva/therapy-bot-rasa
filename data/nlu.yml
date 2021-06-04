@@ -1,0 +1,94 @@
+version: "2.0"
+nlu:
+- intent: goodbye
+  examples: |
+    - [bye](goodbyes)
+- intent: greet
+  examples: |
+    - [hi](greeting)
+    - [hoi](greeting)!
+    - salam
+    - hello
+- intent: mood_sarcasm
+  examples: |
+    - Less deadlines?
+- intent: mood_unhappy
+  examples: |
+    - [Not great](sad mood)
+    - [not](sad mood) so [great](sad mood) :(
+- intent: mood_great
+  examples: |
+    - [Happy](happy mood)
+- intent: deny
+  examples: |
+    - [no](deny)
+- intent: affirm
+  examples: |
+    - [yes](agree)
+    - [Yes](agree), I am [just](sad mood) so [tired](sad mood)
+- intent: mood_pressured
+  examples: |
+    - I feel [pressured](sad mood) at work
+- intent: mood_share
+  examples: |
+    - [Yeah](agree), I have [to](sad mood) hand [in](sad mood) [an](sad mood) [important](sad mood) [project](sad mood) [on](sad mood) Tuesday [but](sad mood) [I](sad mood) also have [a](sad mood) [lot](sad mood) [of](sad mood) meetings [with](sad mood) clients.
+- synonym: hi
+  examples: |
+    - hello
+    - good morning
+    - good evening
+    - bonjorno
+    - ola!
+    - salam
+    - privet
+    - bonjour
+    - bonsoir
+- synonym: bye
+  examples: |
+    - good bye
+    - goodbye
+    - bye-bye
+    - bye bye
+- synonym: good
+  examples: |
+    - perfect
+    - happy
+    - fantastic
+    - very good
+    - very happy
+    - super
+    - amazing
+    - joyful
+    - Happy
+- synonym: sad
+  examples: |
+    - not happy
+    - not so good
+    - not great
+    - depressed
+    - Not great
+- synonym: I feel pressured
+  examples: |
+    - I feel overwhelmed
+    - pressured
+    - overwhelmed
+- synonym: Not really
+  examples: |
+    - no
+    - n
+    - I do not think so
+    - I don't think so
+    - I disagree
+    - Nah
+    - I rather not
+    - Nee
+- synonym: yes
+  examples: |
+    - ye
+    - ya
+    - ja
+    - y
+    - ofc
+    - Of course
+    - YAY!
+    - OMG yes
