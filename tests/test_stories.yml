@@ -16,15 +16,15 @@ stories:
       I have so many deadlines next week. I feel overwhelmed.
     intent: mood_pressured
   - action: utter_long_sympathize
-  - action: utter_what_happened
+  - action: utter_more_details
   - user: |
-      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+      I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
   - user: |
       Yes, I am just so tired
-    intent: mood_affirm
+    intent: affirm
   - action: utter_short_sympathize 
   - action: utter_what_will_help
   - user: |
@@ -33,8 +33,9 @@ stories:
   - action: utter_will_that_help
   - user: |
       Yes, thank u. I will try that
-    intent: mood_affirm
+    intent: thank_you
   - action: utter_welcome
+  - action: utter_anything_else
   - user: |
       Bye
     intent: goodbye
@@ -51,18 +52,18 @@ stories:
     intent: mood_pressured
   - action: utter_what_happened
   - user: |
-      I have so many deadlines next week. I feel overwhelmed.
+      Too much work
     intent: mood_pressured
   - action: utter_long_sympathize
-  - action: utter_what_happened
+  - action: utter_more_details
   - user: |
-      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+      I have an 2k words essay due tomorrow.
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
   - user: |
       Yes, I am just so tired
-    intent: mood_affirm
+    intent: affirm
   - action: utter_short_sympathize 
   - action: utter_what_will_help
   - user: |
@@ -79,8 +80,9 @@ stories:
   - action: utter_that_is_what_she_said_meme
   - user: |
       Aahah. Okay. I will try that. Thanks a LOT
-    intent: mood_affirm
+    intent: thank_you
   - action: utter_welcome
+  - action: utter_anything_else
   - user: |
       Nope. Bye
     intent: goodbye
@@ -93,22 +95,13 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      Not great. I feel pressured at work
-    intent: mood_pressured
-  - action: utter_what_happened
-  - user: |
-      I have so many deadlines next week. I feel overwhelmed.
-    intent: mood_pressured
-  - action: utter_long_sympathize
-  - action: utter_what_happened
-  - user: |
-      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+      Too much work, too little time. Have six deadlines and project plan to hand in.
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
   - user: |
       Yes, I am just so tired
-    intent: mood_affirm
+    intent: affirm
   - action: utter_short_sympathize 
   - action: utter_what_will_help
   - user: |
@@ -117,8 +110,9 @@ stories:
   - action: utter_that_is_what_she_said_meme
   - user: |
       Yeah, lol. Thanks a lot
-    intent: mood_affirm
+    intent: thank_you
   - action: utter_welcome
+  - action: utter_anything_else
   - user: |
       NAH. Bye-bye
     intent: goodbye
@@ -135,32 +129,49 @@ stories:
     intent: mood_pressured
   - action: utter_what_happened
   - user: |
-      I have so many deadlines next week. I feel overwhelmed.
+      I feel overwhelmed.
     intent: mood_pressured
   - action: utter_long_sympathize
-  - action: utter_what_happened
+  - action: utter_more_details
   - user: |
-      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+      I have a lot of meetings with clients. 
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
   - user: |
       No
     intent: deny
-  - action: utter_more_details
+  - action: utter_why_cant_u_handle
   - user: |
       Because it is just too much for me. I am tired.
-    intent: mood_pressured
+    intent: mood_desperate
   - action: utter_that_is_what_she_said_meme
   - user: |
-      lmao. Dankje
-    intent: mood_affirm
-  - action: utter_welcome
+      yes
+    intent: affirm
+  - action: utter_anything_else
   - user: |
       Goodbye
     intent: goodbye
   - action: utter_goodbye
 
+- story: bot questions
+  steps: 
+  - user: |
+      WASSAP!
+    intent: greet
+  - action: utter_greet_wassap
+  - user: |
+      What's ur name?
+    intent: bot_name
+  - action: utter_bot_name
+  - user: |
+      How many kids do u have?
+    intent: bot_question
+  - action: utter_bot_question
+  - user: How old are you?
+    intent: bot_question
+  - action: utter_bot_question
 
 - story: happy path 1
   steps:
@@ -171,22 +182,6 @@ stories:
   - user: |
       amazing
     intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
   - action: utter_happy
 
 - story: say goodbye

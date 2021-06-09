@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: goodbye
   examples: |
@@ -13,7 +12,7 @@ nlu:
     - hello
     - [hoi](greeting)
     - Hi
-    - ji
+    - salam
     - [hi](greeting), I am [Aydan](name)!
 - intent: mood_sarcasm
   examples: |
@@ -29,7 +28,7 @@ nlu:
 - intent: mood_great
   examples: |
     - [Happy](happy mood)
-    - I feel [joyful](good)
+    - I feel [joyful](happy mood)
     - good
 - intent: deny
   examples: |
@@ -38,37 +37,86 @@ nlu:
 - intent: affirm
   examples: |
     - [yes](agree)
-    - [Yes](agree), I am just so [tired](sad)
+    - [Yes](agree), I am just so [tired](sad mood)
     - ok
     - yeah okay
-    - Thank you
-    - thanks
-    - Dankje
-    - Danku
-    - thank you
+    - okay
 - intent: mood_pressured
   examples: |
-    - I feel [pressured](sad) at work
+    - I feel [pressured](pressured mood) at work
     - Not great. I feel pressured at work.
-    - I have so many deadlines next week. I feel overwhelmed.
-    - Not great. I feel pressured at work
-    - i feel overwhelmed
+    - I have so many deadlines next week. I feel [overwhelmed](pressured mood).
+    - [Not great](sad mood). I feel [pressured](pressured mood) at work
     - depressed
     - [yes](agree) my pressure at work
-    - i feel pressured at work
+    - i feel pressured
+    - i feel overwhelmed
+    - too many deadlines
+- intent: mood_more_details
+  examples: |
+    - I hate
+    - I love
+    - i hate my job
+    - [i hate](sad mood) my boss
 - intent: mood_share_work
   examples: |
     - Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients.
+    - i have too many deadlines
+    - I have deadline on Thursday and meetings with clients
+    - i have to hand in the report by the end of tomorrow
+    - i have to hand in another one the next day
 - intent: mood_desperate
   examples: |
     - I do not know tbh. I tried a lot of different things
     - I have no clue
     - idk
     - I do not care anymore
+    - IT is too much for me
 - intent: mood_suggestion
   examples: |
     - More sleeping hours maybe
     - Better sleeping schedule
+    - Healthy lifestyle
+    - Vacation days
+    - Maybe I can take vacation
+- intent: suicide
+  examples: |
+    - I want to kill myself
+    - I wanna die
+    - suicide
+    - kill myself
+    - i want to kill myself
+- intent: bot_name
+  examples: |
+    - What is ur name?
+    - What is your name?
+    - What's name?
+    - How shall I call [you]?
+    - How can I call [you]?
+    - Do [you] have a name?
+- intent: bot_question
+  examples: |
+    - How are [you]?
+    - Wassap with [you]?
+    - Whatchu doin?
+    - What are [you] doing?
+    - Wassap?
+    - Where did [you] study?
+    - What do [you] do for living?
+    - Do [you] have a family?
+    - Are [you] married?
+- intent: thank_you
+  examples: |
+    - Thank [you]
+    - thanks
+    - Dankje
+    - Danku
+    - thank [you]
+- intent: greet_wassap
+  examples: |
+    - WASSAP
+    - wassap
+
 - synonym: hi
   examples: |
     - hello
@@ -86,11 +134,12 @@ nlu:
     - good bye
     - goodbye
     - bye-bye
-    - bye bye
-- synonym: good
+    - tot ziens
+    - doei
+- synonym: happy
   examples: |
     - perfect
-    - happy
+    - good
     - fantastic
     - very good
     - very happy
@@ -105,15 +154,17 @@ nlu:
     - not great
     - depressed
     - Not great
-- synonym: I feel pressured
+- synonym: pressured
   examples: |
     - I feel overwhelmed
     - pressured
     - overwhelmed
-- synonym: Not really
+    - stressed
+- synonym: no 
   examples: |
-    - no
+    - Not really
     - n
+    - nope
     - I do not think so
     - I don't think so
     - I disagree
@@ -131,9 +182,16 @@ nlu:
     - Of course
     - YAY!
     - OMG yes
+    - yeap
 - synonym: name
   examples: |
     - Steve
     - John
     - Kate
     - Aydan
+- synonym: you
+  examples: |
+    - you
+    - jij
+    - je
+    - u

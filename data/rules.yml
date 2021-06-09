@@ -1,13 +1,26 @@
 version: "2.0"
-
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: Suicide prevention
+  steps:
+  - intent: suicide
+  - action: utter_suicide_prevention
+- rule: Bot questions
+  steps:
+  - intent: bot_question
+  - action: utter_bot_question
+- rule: Bot name
+  steps: 
+  - intent: bot_name
+  - action: utter_bot_name
+- rule: Say welcome after thank you
+  steps:
+  - intent: thank_you
+  - action: utter_welcome

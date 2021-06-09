@@ -27,9 +27,19 @@ intents:
     use_entities: true
 - mood_suggestion:
     use_entities: true
-- mood_affirm:
-    use_entities: true
 - mood_desperate:
+    use_entities: true
+- mood_more_details:
+    use_entities: true
+- thank_you:
+    use_entities: true
+- bot_name:
+    use_entities: true
+- bot_question:
+    use_entities: true
+- greet_wassap:
+    use_entities: true
+- suicide:
     use_entities: true
 entities:
 - greeting
@@ -40,7 +50,7 @@ entities:
 - agree
 - sad
 - name
-- good
+- pressured mood
 slots:
   name:
     type: rasa.shared.core.slots.TextSlot
@@ -49,12 +59,15 @@ slots:
     influence_conversation: false
 responses:
   utter_greet:
-  - text: Hey! How are you feeling today?
+  - text: Hey {name}! How are you feeling today?
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
+  utter_sarcasm:
+  - text: Fair, lol.
+  - text: LMAO
   utter_will_that_help:
-  - text: 'Fair, lol. Seriously, tho: it is completely fine to feel overwhelmed at work. Everyone that I know had this at some point in their lives. What I do when I feel that way is to make precise planning for every day and trying to get my sleep schedule fixed. Do u think that might help u?'
+  - text: It is completely fine to feel overwhelmed at work. Everyone that I know had this at some point in their lives. What I do when I feel that way is to make precise planning for every day and trying to get my sleep schedule fixed. Do u think that might help u?
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
@@ -70,23 +83,26 @@ responses:
   - image: https://imgix.bustle.com/rehost/2016/9/13/ad641958-cb54-42aa-b7cc-be3df328c51e.png?w=800&fit=crop&crop=faces&auto=format%2Ccompress
     text: Oh man, could you BE any busier?
   utter_what_happened:
-  - text: I am sorry to hear that. Work can be stressful indeed. What happened?
+  - text: I am sorry to hear that. What happened?
   utter_long_sympathize:
   - text: I feel overwhelmed too sometimes...I remember back in my college days, I had to prepare lots of presentations and essays. But the most stressful thing was the tests. A lot of people feel pressure at work. Ur feelings r totally valid.
-  utter_sympathized:
-  - text: I understand. Ur feelings are totally valid.
+  - text: I absolutely get u. At my previous job I did a lot of overtime, and not even because of my own fault. I had waaaay too many responsibilities for one person and was constantly stressed.
   utter_what_will_help:
-  - text: Oh :( okay. What do u think will help?
+  - text: What do u think will help?
   - text: What do u think might help u to feel better?
   utter_welcome:
-  - text: Always welcome :) Is there anything else u want to discuss?
+  - text: Always welcome :)
+  - text: Graag gedaan :)
   utter_more_details:
-  - text: Let's go into more details here.
+  - text: Let's go into more details here. Tell me more.
   - text: Tell me more.
   - text: Could u specify that?
   - text: Can u tell me more?
+  - text: Please continue.
+  - text: Why do u feel that way?
   utter_will_u_handle:
   - text: Do u feel that u will be able to handle the pressure eventually?
+  - text: Do u feel u can handle that?
   utter_why_cant_u_handle:
   - text: Why do u think u would not be able to handle that?
   utter_ask_if_feel_better:
@@ -96,6 +112,17 @@ responses:
   - text: I understand. Ur feelings are totally valid.
   - text: I see
   - text: I am so sorry :(
+  utter_anything_else:
+  - text: Is there anything else u want to discuss?
+  utter_suicide_prevention:
+  - text: 'I am so sorry to hear that. Please remember you are not alone. Do not be afraid to ask the help of a specialist: https://www.113.nl/english.'
+  utter_bot_name:
+  - text: I shall not be named. Tell me ur problem, Mr. Riddle.
+  utter_bot_question:
+  - image: https://preview.redd.it/tkul6xtl6lt11.jpg?width=640&crop=smart&auto=webp&s=adfd0e40f4a30319019b3e2c3e9f68dd96438e97 
+  - text: I am the one asking questions here :) Wassap with u?
+  utter_wassap_greet:
+  - text: WASSAP! How u doin?)
 actions: []
 forms: {}
 e2e_actions: []
