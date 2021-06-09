@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Yes, I am just so tired",
+    "intent": "mood_affirm",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9999368190765381
+    }
+  },
+  {
+    "text": "lmao. Dankje",
+    "intent": "mood_affirm",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9923810958862305
+    }
+  },
+  {
+    "text": "yeah okay",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_affirm",
+      "confidence": 0.9032578468322754
+    }
+  },
+  {
+    "text": "thanks",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_affirm",
+      "confidence": 0.9746785759925842
+    }
+  },
+  {
+    "text": "Because it is just too much for me. I am tired.",
+    "intent": "mood_pressured",
+    "intent_prediction": {
+      "name": "mood_affirm",
+      "confidence": 0.5344813466072083
+    }
+  },
+  {
+    "text": "Yes, I am just so tired",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_affirm",
+      "confidence": 0.9999996423721313
+    }
+  }
+]

@@ -1,37 +1,74 @@
 version: "2.0"
+
 nlu:
 - intent: goodbye
   examples: |
     - [bye](goodbyes)
+    - [bye-bye](goodbyes)
 - intent: greet
   examples: |
-    - [hi](greeting)
+    - hi
     - [hoi](greeting)!
     - salam
     - hello
+    - [hoi](greeting)
+    - Hi
+    - ji
+    - [hi](greeting), I am [Aydan](name)!
 - intent: mood_sarcasm
   examples: |
     - Less deadlines?
+    - Magic beans
+    - too many deadlines too little time
 - intent: mood_unhappy
   examples: |
     - [Not great](sad mood)
     - [not](sad mood) so [great](sad mood) :(
+    - bad
+    - i am sad
 - intent: mood_great
   examples: |
     - [Happy](happy mood)
+    - I feel [joyful](good)
+    - good
 - intent: deny
   examples: |
     - [no](deny)
+    - [nah](deny), thanks
 - intent: affirm
   examples: |
     - [yes](agree)
-    - [Yes](agree), I am [just](sad mood) so [tired](sad mood)
+    - [Yes](agree), I am just so [tired](sad)
+    - ok
+    - yeah okay
+    - Thank you
+    - thanks
+    - Dankje
+    - Danku
+    - thank you
 - intent: mood_pressured
   examples: |
-    - I feel [pressured](sad mood) at work
-- intent: mood_share
+    - I feel [pressured](sad) at work
+    - Not great. I feel pressured at work.
+    - I have so many deadlines next week. I feel overwhelmed.
+    - Not great. I feel pressured at work
+    - i feel overwhelmed
+    - depressed
+    - [yes](agree) my pressure at work
+    - i feel pressured at work
+- intent: mood_share_work
   examples: |
-    - [Yeah](agree), I have [to](sad mood) hand [in](sad mood) [an](sad mood) [important](sad mood) [project](sad mood) [on](sad mood) Tuesday [but](sad mood) [I](sad mood) also have [a](sad mood) [lot](sad mood) [of](sad mood) meetings [with](sad mood) clients.
+    - Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients.
+- intent: mood_desperate
+  examples: |
+    - I do not know tbh. I tried a lot of different things
+    - I have no clue
+    - idk
+    - I do not care anymore
+- intent: mood_suggestion
+  examples: |
+    - More sleeping hours maybe
+    - Better sleeping schedule
 - synonym: hi
   examples: |
     - hello
@@ -43,6 +80,7 @@ nlu:
     - privet
     - bonjour
     - bonsoir
+    - hoi
 - synonym: bye
   examples: |
     - good bye
@@ -82,6 +120,7 @@ nlu:
     - Nah
     - I rather not
     - Nee
+    - nah
 - synonym: yes
   examples: |
     - ye
@@ -92,3 +131,9 @@ nlu:
     - Of course
     - YAY!
     - OMG yes
+- synonym: name
+  examples: |
+    - Steve
+    - John
+    - Kate
+    - Aydan

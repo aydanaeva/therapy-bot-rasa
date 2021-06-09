@@ -1,1 +1,160 @@
 version: "2.0"
+stories:
+- story: pressured at work 1
+  steps:
+  - user: |
+      Hoi!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not great. I feel pressured at work
+    intent: mood_pressured
+  - action: utter_what_happened
+  - user: |
+      I have so many deadlines next week. I feel overwhelmed.
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_what_happened
+  - user: |
+      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      Yes, I am just so tired
+    intent: mood_affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: |
+      Less deadlines?
+    intent: mood_sarcasm
+  - action: utter_will_that_help
+  - user: |
+      Yes, thank u. I will try that
+    intent: mood_affirm
+  - action: utter_welcome
+  - user: |
+      Bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: pressured at work 2
+  steps:
+  - user: |
+      Hoi!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not great. I feel pressured at work
+    intent: mood_pressured
+  - action: utter_what_happened
+  - user: |
+      I have so many deadlines next week. I feel overwhelmed.
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_what_happened
+  - user: |
+      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      Yes, I am just so tired
+    intent: mood_affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: |
+      Less deadlines?
+    intent: mood_sarcasm
+  - action: utter_will_that_help
+  - user: |
+      Not really :(
+    intent: deny
+  - action: utter_what_will_help
+  - user: |
+      I do not know tbh. I tried a lot of different things
+    intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      Aahah. Okay. I will try that. Thanks a LOT
+    intent: mood_affirm
+  - action: utter_welcome
+  - user: |
+      Nope. Bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: pressured at work 3
+  steps:
+  - user: |
+      Hoi!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not great. I feel pressured at work
+    intent: mood_pressured
+  - action: utter_what_happened
+  - user: |
+      I have so many deadlines next week. I feel overwhelmed.
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_what_happened
+  - user: |
+      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      Yes, I am just so tired
+    intent: mood_affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: |
+      More sleeping hours maybe.
+    intent: mood_suggestion
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      Yeah, lol. Thanks a lot
+    intent: mood_affirm
+  - action: utter_welcome
+  - user: |
+      NAH. Bye-bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: pressured at work 4
+  steps:
+  - user: |
+      Hoi!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not great. I feel pressured at work
+    intent: mood_pressured
+  - action: utter_what_happened
+  - user: |
+      I have so many deadlines next week. I feel overwhelmed.
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_what_happened
+  - user: |
+      Yeah, I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      No
+    intent: deny
+  - action: utter_more_details
+  - user: |
+      Because it is just too much for me. I am tired.
+    intent: mood_pressured
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      lmao. Dankje
+    intent: mood_affirm
+  - action: utter_welcome
+  - user: |
+      Goodbye
+    intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,230 @@
+[
+  {
+    "text": "I feel pressured at work",
+    "entities": [
+      {
+        "start": 7,
+        "end": 16,
+        "value": "pressured",
+        "entity": "sad"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "NAH. Bye-bye",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "goodbyes",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.9842655658721924,
+        "value": "bye",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Yes, I am just so tired",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "agree",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9818322658538818,
+        "value": "Yes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "sad",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.8249484300613403,
+        "value": "tired",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bye-bye",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "bye-bye",
+        "entity": "goodbyes"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yes",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "yes",
+        "entity": "agree"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yes my pressure at work",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "yes",
+        "entity": "agree"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hi, I am Aydan!",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "hi",
+        "entity": "greeting"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Aydan",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Not great. I feel pressured at work",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sad",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.6719213128089905,
+        "value": "I feel pressured",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i feel pressured at work",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sad",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.6887497305870056,
+        "value": "I feel pressured",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "hi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "greeting",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.7813534736633301,
+        "value": "hi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bye",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "goodbyes",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.8959895372390747,
+        "value": "Bye",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes, thank u. I will try that",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "agree",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.8144270181655884,
+        "value": "Yes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bye",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "bye",
+        "entity": "goodbyes"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Yes, I am just so tired",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "Yes",
+        "entity": "agree"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "tired",
+        "entity": "sad"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hoi!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "greeting",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9952928423881531,
+        "value": "hi",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

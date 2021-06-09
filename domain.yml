@@ -23,7 +23,13 @@ intents:
     use_entities: true
 - mood_pressured:
     use_entities: true
-- mood_share:
+- mood_share_work:
+    use_entities: true
+- mood_suggestion:
+    use_entities: true
+- mood_affirm:
+    use_entities: true
+- mood_desperate:
     use_entities: true
 entities:
 - greeting
@@ -32,7 +38,15 @@ entities:
 - sad mood
 - deny
 - agree
-slots: {}
+- sad
+- name
+- good
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey! How are you feeling today?
@@ -57,7 +71,7 @@ responses:
     text: Oh man, could you BE any busier?
   utter_what_happened:
   - text: I am sorry to hear that. Work can be stressful indeed. What happened?
-  utter_long_sympathized:
+  utter_long_sympathize:
   - text: I feel overwhelmed too sometimes...I remember back in my college days, I had to prepare lots of presentations and essays. But the most stressful thing was the tests. A lot of people feel pressure at work. Ur feelings r totally valid.
   utter_sympathized:
   - text: I understand. Ur feelings are totally valid.
