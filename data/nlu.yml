@@ -18,6 +18,7 @@ nlu:
     - Less deadlines?
     - Magic beans
     - too many deadlines too little time
+    - i feel like i have too many deadlines and too little time
 - intent: mood_unhappy
   examples: |
     - [Not great](sad mood)
@@ -53,6 +54,10 @@ nlu:
     - too many deadlines
     - i feel stressful;
     - I feel pressured
+    - i feel pressured at work
+    - i feel stressed
+    - [yes](agree) I still feel pressured at work
+    - I feel overwhelmed at work
 - intent: mood_more_details
   examples: |
     - I hate
@@ -66,6 +71,7 @@ nlu:
     - I have deadline on Thursday and meetings with clients
     - i have to hand in the report by the end of tomorrow
     - i have to hand in another one the next day
+    - I have too many deadlines
 - intent: mood_desperate
   examples: |
     - I do not know tbh. I tried a lot of different things
@@ -73,6 +79,7 @@ nlu:
     - idk
     - I do not care anymore
     - IT is too much for me
+    - i do not know
 - intent: mood_suggestion
   examples: |
     - More sleeping hours maybe
@@ -95,6 +102,7 @@ nlu:
     - How shall I call [you]?
     - How can I call [you]?
     - Do [you] have a name?
+    - what is ur name
 - intent: bot_question
   examples: |
     - How are [you]?
@@ -107,6 +115,8 @@ nlu:
     - Do [you] have a family?
     - Are [you] married?
     - how are you doing?
+    - how many kids do u have
+    - actually wait  a sec
 - intent: thank_you
   examples: |
     - Thank [you]
@@ -114,6 +124,8 @@ nlu:
     - Dankje
     - Danku
     - thank [you]
+    - nope denks
+    - thank you
 - intent: greet_wassap
   examples: |
     - WASSAP
