@@ -1,0 +1,357 @@
+[
+  {
+    "text": "I feel pressured at work",
+    "entities": [
+      {
+        "start": 7,
+        "end": 16,
+        "value": "pressured",
+        "entity": "pressured mood"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I have so many deadlines next week. I feel overwhelmed.",
+    "entities": [
+      {
+        "start": 43,
+        "end": 54,
+        "value": "overwhelmed",
+        "entity": "pressured mood"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yes my pressure at work",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "yes",
+        "entity": "agree"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bye-bye!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "goodbyes",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9921084046363831,
+        "value": "bye",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "NAH. Bye-bye",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "goodbyes",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.9708008766174316,
+        "value": "bye",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Because it is just too much for me. I am tired.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sad mood",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.6310411691665649,
+        "value": "tired",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bye",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "bye",
+        "entity": "goodbyes"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I have so many deadlines next week. I feel overwhelmed.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pressured mood",
+        "start": 43,
+        "end": 54,
+        "confidence_entity": 0.6685541272163391,
+        "value": "pressured",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I feel overwhelmed.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pressured mood",
+        "start": 7,
+        "end": 18,
+        "confidence_entity": 0.5163237452507019,
+        "value": "pressured",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Yes, I am just so tired",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "Yes",
+        "entity": "agree"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "tired",
+        "entity": "sad mood"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Not great. I feel pressured at work.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sad mood",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.927143394947052,
+        "value": "sad",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pressured mood",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.8483643531799316,
+        "value": "pressured",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hoi!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "greeting",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9940084218978882,
+        "value": "hi",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Not great. I feel pressured at work",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sad mood",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.927143394947052,
+        "value": "sad",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pressured mood",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.8483643531799316,
+        "value": "pressured",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hi, I am Aydan!",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "hi",
+        "entity": "greeting"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Aydan",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i feel pressured",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pressured mood",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.7409924268722534,
+        "value": "pressured",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "agree",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.8728597164154053,
+        "value": "yes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bye",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "goodbyes",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.795872151851654,
+        "value": "Bye",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bye-bye",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "bye-bye",
+        "entity": "goodbyes"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "greeting",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.638307511806488,
+        "value": "hi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Not great. I feel pressured at work",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Not great",
+        "entity": "sad mood"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "value": "pressured",
+        "entity": "pressured mood"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Yes, I am just so tired",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "agree",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9526601433753967,
+        "value": "Yes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "sad mood",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.7377266883850098,
+        "value": "tired",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes, thank u. I will try that",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "agree",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7515377998352051,
+        "value": "Yes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

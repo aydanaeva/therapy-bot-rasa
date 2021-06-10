@@ -12,7 +12,6 @@ nlu:
     - hello
     - [hoi](greeting)
     - Hi
-    - salam
     - [hi](greeting), I am [Aydan](name)!
 - intent: mood_sarcasm
   examples: |
@@ -52,6 +51,8 @@ nlu:
     - i feel pressured
     - i feel overwhelmed
     - too many deadlines
+    - i feel stressful;
+    - I feel pressured
 - intent: mood_more_details
   examples: |
     - I hate
@@ -105,6 +106,7 @@ nlu:
     - What do [you] do for living?
     - Do [you] have a family?
     - Are [you] married?
+    - how are you doing?
 - intent: thank_you
   examples: |
     - Thank [you]
@@ -116,7 +118,6 @@ nlu:
   examples: |
     - WASSAP
     - wassap
-
 - synonym: hi
   examples: |
     - hello
@@ -157,10 +158,9 @@ nlu:
 - synonym: pressured
   examples: |
     - I feel overwhelmed
-    - pressured
     - overwhelmed
     - stressed
-- synonym: no 
+- synonym: no
   examples: |
     - Not really
     - n
@@ -191,7 +191,6 @@ nlu:
     - Aydan
 - synonym: you
   examples: |
-    - you
     - jij
     - je
     - u

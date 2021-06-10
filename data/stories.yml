@@ -2,196 +2,149 @@ version: "2.0"
 stories:
 - story: pressured at work 1
   steps:
-  - user: |
-      Hoi!
-    intent: greet
+  - intent: greet
   - action: utter_greet
-  - user: |
-      Not great. I feel pressured at work
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_what_happened
-  - user: |
-      I have so many deadlines next week. I feel overwhelmed.
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_long_sympathize
   - action: utter_more_details
-  - user: |
-      I have to hand in an important project on Tuesday but I also have a lot of meetings with clients. 
-    intent: mood_share_work
+  - intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
-  - user: |
-      Yes, I am just so tired
-    intent: affirm
-  - action: utter_short_sympathize 
+  - intent: affirm
+  - action: utter_short_sympathize
   - action: utter_what_will_help
-  - user: |
-      Less deadlines?
-    intent: mood_sarcasm
+  - intent: mood_sarcasm
   - action: utter_will_that_help
-  - user: |
-      Yes, thank u. I will try that
-    intent: thank_you
+  - intent: thank_you
   - action: utter_welcome
   - action: utter_anything_else
-  - user: |
-      Bye
-    intent: goodbye
+  - intent: goodbye
   - action: utter_goodbye
-
 - story: pressured at work 2
   steps:
-  - user: |
-      Hoi!
-    intent: greet
+  - intent: greet
   - action: utter_greet
-  - user: |
-      Not great. I feel pressured at work
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_what_happened
-  - user: |
-      Too much work
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_long_sympathize
   - action: utter_more_details
-  - user: |
-      I have an 2k words essay due tomorrow.
-    intent: mood_share_work
+  - intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
-  - user: |
-      Yes, I am just so tired
-    intent: affirm
-  - action: utter_short_sympathize 
+  - intent: affirm
+  - action: utter_short_sympathize
   - action: utter_what_will_help
-  - user: |
-      Less deadlines?
-    intent: mood_sarcasm
+  - intent: mood_sarcasm
   - action: utter_will_that_help
-  - user: |
-      Not really :(
-    intent: deny
+  - intent: deny
   - action: utter_what_will_help
-  - user: |
-      I do not know tbh. I tried a lot of different things
-    intent: mood_desperate
+  - intent: mood_desperate
   - action: utter_that_is_what_she_said_meme
-  - user: |
-      Aahah. Okay. I will try that. Thanks a LOT
-    intent: thank_you
+  - intent: thank_you
   - action: utter_welcome
   - action: utter_anything_else
-  - user: |
-      Nope. Bye
-    intent: goodbye
+  - intent: goodbye
   - action: utter_goodbye
-
 - story: pressured at work 3
   steps:
-  - user: |
-      Hoi!
-    intent: greet
+  - intent: greet
   - action: utter_greet
-  - user: |
-      Too much work, too little time. Have six deadlines and project plan to hand in.
-    intent: mood_share_work
+  - intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
-  - user: |
-      Yes, I am just so tired
-    intent: affirm
-  - action: utter_short_sympathize 
+  - intent: affirm
+  - action: utter_short_sympathize
   - action: utter_what_will_help
-  - user: |
-      More sleeping hours maybe.
-    intent: mood_suggestion
+  - intent: mood_suggestion
   - action: utter_that_is_what_she_said_meme
-  - user: |
-      Yeah, lol. Thanks a lot
-    intent: thank_you
+  - intent: thank_you
   - action: utter_welcome
   - action: utter_anything_else
-  - user: |
-      NAH. Bye-bye
-    intent: goodbye
+  - intent: goodbye
   - action: utter_goodbye
-
 - story: pressured at work 4
   steps:
-  - user: |
-      Hoi!
-    intent: greet
+  - intent: greet
   - action: utter_greet
-  - user: |
-      Not great. I feel pressured at work
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_what_happened
-  - user: |
-      I feel overwhelmed.
-    intent: mood_pressured
+  - intent: mood_pressured
   - action: utter_long_sympathize
   - action: utter_more_details
-  - user: |
-      I have a lot of meetings with clients. 
-    intent: mood_share_work
+  - intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
-  - user: |
-      No
-    intent: deny
+  - intent: deny
   - action: utter_why_cant_u_handle
-  - user: |
-      Because it is just too much for me. I am tired.
-    intent: mood_desperate
+  - intent: mood_desperate
   - action: utter_that_is_what_she_said_meme
-  - user: |
-      yes
-    intent: affirm
+  - intent: affirm
   - action: utter_anything_else
-  - user: |
-      Goodbye
-    intent: goodbye
+  - intent: goodbye
   - action: utter_goodbye
-
 - story: bot questions
-  steps: 
-  - user: |
-      WASSAP!
-    intent: greet
+  steps:
+  - intent: greet
   - action: utter_greet_wassap
-  - user: |
-      What's ur name?
-    intent: bot_name
+  - intent: bot_name
   - action: utter_bot_name
-  - user: |
-      How many kids do u have?
-    intent: bot_question
+  - intent: bot_question
   - action: utter_bot_question
-  - user: How old are you?
-    intent: bot_question
+  - intent: bot_question
   - action: utter_bot_question
-  
 - story: happy path 1
   steps:
-  - user: |
-      hello there!
-    intent: greet
+  - intent: greet
   - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
+  - intent: mood_great
   - action: utter_happy
-
 - story: say goodbye
   steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
+  - intent: goodbye
   - action: utter_goodbye
-
 - story: bot challenge
   steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
+  - intent: bot_challenge
   - action: utter_iamabot
+- story: Story from Conversation ID c4a897bc0fa94ef3a266f1323152306f
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_pressured
+  - action: utter_what_happened
+  - intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme
+  - intent: thank_you
+  - action: utter_welcome
+  - action: utter_anything_else
+  - intent: mood_pressured
+    entities:
+    - agree: yes
+  - action: utter_what_happened
+  - intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_more_details
+  - intent: mood_sarcasm
+  - action: utter_will_that_help
+  - intent: affirm
+    entities:
+    - agree: yes
+  - action: utter_anything_else
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: bot_question
+  - action: utter_bot_question
+  - intent: bot_name
+  - action: utter_bot_name
+  - intent: bot_question
+  - action: utter_bot_question
+  - intent: greet_wassap
+  - action: utter_greet_wassap
+  - intent: mood_great
+  - action: utter_happy

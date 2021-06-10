@@ -48,7 +48,6 @@ entities:
 - sad mood
 - deny
 - agree
-- sad
 - name
 - pressured mood
 slots:
@@ -119,9 +118,9 @@ responses:
   utter_bot_name:
   - text: I shall not be named. Tell me ur problem, Mr. Riddle.
   utter_bot_question:
-  - image: https://preview.redd.it/tkul6xtl6lt11.jpg?width=640&crop=smart&auto=webp&s=adfd0e40f4a30319019b3e2c3e9f68dd96438e97 
-  - text: I am the one asking questions here :) Wassap with u?
-  utter_wassap_greet:
+  - image: https://preview.redd.it/tkul6xtl6lt11.jpg?width=640&crop=smart&auto=webp&s=adfd0e40f4a30319019b3e2c3e9f68dd96438e97
+    text: I am the one asking questions here :) Wassap with u?
+  utter_greet_wassap:
   - text: WASSAP! How u doin?)
 actions: []
 forms: {}

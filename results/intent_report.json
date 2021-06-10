@@ -1,0 +1,112 @@
+{
+  "thank_you": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9411764705882353,
+    "support": 8,
+    "confused_with": {}
+  },
+  "mood_suggestion": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "greet": 1
+    }
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "suicide": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1-score": 0.7499999999999999,
+    "support": 5,
+    "confused_with": {
+      "greet": 1,
+      "bot_question": 1
+    }
+  },
+  "mood_pressured": {
+    "precision": 0.9166666666666666,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.8799999999999999,
+    "support": 13,
+    "confused_with": {
+      "mood_share_work": 1,
+      "mood_desperate": 1
+    }
+  },
+  "mood_share_work": {
+    "precision": 0.7272727272727273,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.7999999999999999,
+    "support": 9,
+    "confused_with": {
+      "mood_pressured": 1
+    }
+  },
+  "mood_desperate": {
+    "precision": 0.5,
+    "recall": 0.16666666666666666,
+    "f1-score": 0.25,
+    "support": 6,
+    "confused_with": {
+      "thank_you": 1,
+      "mood_share_work": 1
+    }
+  },
+  "bot_name": {
+    "precision": 0.8,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.6666666666666666,
+    "support": 7,
+    "confused_with": {
+      "bot_question": 3
+    }
+  },
+  "bot_question": {
+    "precision": 0.6,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.6923076923076923,
+    "support": 11,
+    "confused_with": {
+      "mood_share_work": 1,
+      "bot_name": 1
+    }
+  },
+  "greet": {
+    "precision": 0.75,
+    "recall": 0.9,
+    "f1-score": 0.8181818181818182,
+    "support": 10,
+    "confused_with": {
+      "bot_question": 1
+    }
+  },
+  "accuracy": 0.8089887640449438,
+  "macro avg": {
+    "precision": 0.8234389348025711,
+    "recall": 0.784059374968466,
+    "f1-score": 0.7855233536516959,
+    "support": 89
+  },
+  "weighted avg": {
+    "precision": 0.8134632845307003,
+    "recall": 0.8089887640449438,
+    "f1-score": 0.7963051687242036,
+    "support": 89
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "text": "Wassap with [you]?",
+    "intent": "bot_question",
+    "intent_prediction": {
+      "name": "mood_share_work",
+      "confidence": 0.3033314049243927
+    }
+  },
+  {
+    "text": "Because it is just too much for me. I am tired.",
+    "intent": "mood_desperate",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.654314398765564
+    }
+  },
+  {
+    "text": "too many deadlines",
+    "intent": "mood_pressured",
+    "intent_prediction": {
+      "name": "mood_share_work",
+      "confidence": 0.7734844088554382
+    }
+  },
+  {
+    "text": "I have no clue",
+    "intent": "mood_desperate",
+    "intent_prediction": {
+      "name": "mood_share_work",
+      "confidence": 0.5838871598243713
+    }
+  },
+  {
+    "text": "I do not care anymore",
+    "intent": "mood_desperate",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.5854777693748474
+    }
+  },
+  {
+    "text": "I wanna die",
+    "intent": "suicide",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.21236497163772583
+    }
+  },
+  {
+    "text": "Do [you] have a name?",
+    "intent": "bot_name",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.539345920085907
+    }
+  },
+  {
+    "text": "I do not know tbh. I tried a lot of different things",
+    "intent": "mood_desperate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.43245235085487366
+    }
+  },
+  {
+    "text": "Healthy lifestyle",
+    "intent": "mood_suggestion",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6187107563018799
+    }
+  },
+  {
+    "text": "Do [you] have a family?",
+    "intent": "bot_question",
+    "intent_prediction": {
+      "name": "bot_name",
+      "confidence": 0.7182483673095703
+    }
+  },
+  {
+    "text": "i have too many deadlines",
+    "intent": "mood_share_work",
+    "intent_prediction": {
+      "name": "mood_pressured",
+      "confidence": 0.9932501912117004
+    }
+  },
+  {
+    "text": "idk",
+    "intent": "mood_desperate",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.47872254252433777
+    }
+  },
+  {
+    "text": "How shall I call [you]?",
+    "intent": "bot_name",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.9403601288795471
+    }
+  },
+  {
+    "text": "How can I call [you]?",
+    "intent": "bot_name",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.9502474665641785
+    }
+  },
+  {
+    "text": "suicide",
+    "intent": "suicide",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2121092975139618
+    }
+  },
+  {
+    "text": "WASSAP!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "bot_question",
+      "confidence": 0.9833635687828064
+    }
+  },
+  {
+    "text": "Too much work",
+    "intent": "mood_pressured",
+    "intent_prediction": {
+      "name": "mood_desperate",
+      "confidence": 0.38575443625450134
+    }
+  }
+]

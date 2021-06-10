@@ -20,7 +20,3 @@ rules:
   steps: 
   - intent: bot_name
   - action: utter_bot_name
-- rule: Say welcome after thank you
-  steps:
-  - intent: thank_you
-  - action: utter_welcome
