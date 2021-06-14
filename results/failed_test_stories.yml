@@ -1,0 +1,187 @@
+version: "2.0"
+stories:
+- story: say goodbye (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye  # predicted: utter_anything_else
+- story: bot challenge (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot  # predicted: utter_anything_else
+- story: bot question (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: bot_question
+  - action: utter_bot_question  # predicted: utter_anything_else
+- story: elaborate 1 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_anything_else
+  - intent: mood_unhappy
+  - action: utter_what_happened
+  - intent: mood_pressured
+  - action: utter_long_sympathize  # predicted: utter_anything_else
+  - action: utter_more_details
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: affirm
+  - action: utter_short_sympathize  # predicted: utter_anything_else
+  - action: utter_what_will_help
+  - intent: mood_sarcasm
+  - action: utter_will_that_help  # predicted: utter_anything_else
+  - intent: thank_you
+  - action: utter_welcome  # predicted: utter_anything_else
+  - action: utter_ask_feelings
+  - intent: affirm_feelings
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye  # predicted: utter_anything_else
+- story: elaborate 2 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_anything_else
+  - intent: mood_unhappy
+  - action: utter_what_happened
+  - intent: mood_pressured
+  - action: utter_long_sympathize  # predicted: utter_anything_else
+  - action: utter_more_details
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: affirm
+  - action: utter_short_sympathize  # predicted: utter_anything_else
+  - action: utter_what_will_help
+  - intent: mood_sarcasm
+  - action: utter_will_that_help  # predicted: utter_anything_else
+  - intent: thank_you
+  - action: utter_welcome  # predicted: utter_anything_else
+  - action: utter_ask_feelings
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme
+  - intent: affirm
+  - action: utter_ask_feelings  # predicted: utter_anything_else
+  - intent: affirm_feelings
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye  # predicted: utter_anything_else
+- story: elaborate 3 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_anything_else
+  - intent: mood_unhappy
+  - action: utter_what_happened
+  - intent: mood_pressured
+  - action: utter_long_sympathize  # predicted: utter_anything_else
+  - action: utter_more_details
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: affirm
+  - action: utter_short_sympathize  # predicted: utter_anything_else
+  - action: utter_what_will_help
+  - intent: mood_suggestion
+  - action: utter_that_is_what_she_said_meme
+  - intent: affirm
+  - action: utter_ask_feelings  # predicted: utter_anything_else
+  - intent: mood_more_details
+  - action: utter_that_is_what_she_said_meme
+  - intent: affirm
+  - action: utter_ask_feelings  # predicted: utter_anything_else
+  - intent: affirm_feelings
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_more_details  # predicted: utter_anything_else
+- story: pressured at work 1 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_anything_else
+  - intent: mood_pressured
+  - action: utter_what_happened  # predicted: utter_anything_else
+  - intent: mood_pressured
+  - action: utter_long_sympathize  # predicted: utter_anything_else
+  - action: utter_more_details
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: affirm
+  - action: utter_short_sympathize  # predicted: utter_anything_else
+  - action: utter_what_will_help
+  - intent: mood_sarcasm
+  - action: utter_will_that_help  # predicted: utter_anything_else
+  - intent: thank_you
+  - action: utter_welcome  # predicted: utter_anything_else
+  - action: utter_ask_feelings
+  - intent: deny_feelings
+  - action: utter_anything_else
+  - intent: goodbye
+  - action: utter_goodbye  # predicted: utter_anything_else
+- story: pressured at work 2 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_anything_else
+  - intent: mood_pressured
+  - action: utter_what_happened  # predicted: utter_anything_else
+  - intent: mood_pressured
+  - action: utter_long_sympathize  # predicted: utter_anything_else
+  - action: utter_more_details
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: affirm
+  - action: utter_short_sympathize  # predicted: utter_anything_else
+  - action: utter_what_will_help
+  - intent: mood_sarcasm
+  - action: utter_will_that_help  # predicted: utter_anything_else
+  - intent: deny
+  - action: utter_what_will_help  # predicted: utter_anything_else
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme  # predicted: utter_anything_else
+  - intent: thank_you
+  - action: utter_welcome  # predicted: utter_anything_else
+  - action: utter_ask_feelings
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme  # predicted: utter_anything_else
+  - intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_long_sympathize
+  - action: utter_more_details
+- story: pressured at work 3 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: mood_pressured
+  - action: utter_what_happened  # predicted: utter_anything_else
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme  # predicted: utter_anything_else
+  - intent: mood_desperate
+  - action: utter_more_details  # predicted: utter_anything_else
+- story: pressured at work 4 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: mood_pressured
+  - action: utter_what_happened  # predicted: utter_anything_else
+  - intent: mood_share_work
+  - action: utter_chandler_meme  # predicted: utter_anything_else
+  - action: utter_will_u_handle
+  - intent: deny
+  - action: utter_why_cant_u_handle  # predicted: utter_anything_else
+  - intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme  # predicted: utter_anything_else
+  - intent: mood_desperate
+  - action: utter_more_details  # predicted: utter_anything_else
+- story: bot questions (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet_wassap  # predicted: utter_anything_else
+  - intent: bot_name
+  - action: utter_bot_name
+  - intent: bot_question
+  - action: utter_bot_question  # predicted: utter_anything_else
+  - intent: bot_question
+  - action: utter_bot_question  # predicted: utter_anything_else
+- story: happy path 1 (/home/aydan/Desktop/rasa/therapy-bot-rasa/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet_wassap  # predicted: utter_anything_else
+  - intent: mood_great
+  - action: utter_happy  # predicted: utter_anything_else

@@ -1,9 +1,33 @@
 version: "2.0"
 nlu:
+- intent: affirm_feelings
+  examples: |
+    - [yes]
+    - ok
+    - yeah okay
+    - okay
+    - i guess so
+    - That's a good idea
+    - Yeah i can handle that
+    - I am fine
+    - I think so
+    - Probably [yes]
+    - Sounds good
+    - Sounds okay
+    - ahhaa
+- intent: deny_feelings
+  examples: |
+    - [no]
+    - [no], thanks
+    - nope
+    - I do not think so
+    - Don't think so
+    - Probably [no]
 - intent: goodbye
   examples: |
     - [bye](goodbyes)
     - [bye-bye](goodbyes)
+    - Goodbye
 - intent: greet
   examples: |
     - hi
@@ -12,7 +36,9 @@ nlu:
     - hello
     - [hoi](greeting)
     - Hi
-    - [hi](greeting), I am [Aydan](name)!
+    - [hi](greeting), I am Aydan!
+    - Hi, I am Aydan
+    - Hey Rasa
 - intent: mood_sarcasm
   examples: |
     - Less deadlines?
@@ -24,16 +50,26 @@ nlu:
     - [Not great](sad mood)
     - [not](sad mood) so [great](sad mood) :(
     - bad
-    - i am sad
+    - Not doing [great](sad mood)
+    - I am not doing [great](sad mood), but alright
+    - i am [sad](sad mood)
+    - Im not doing that [great](sad mood), but it is alright
 - intent: mood_great
   examples: |
     - [Happy](happy mood)
-    - I feel [joyful](happy mood)
+    - I feel [happy](happy mood)
     - good
+    - I am [happy](happy mood)
 - intent: deny
   examples: |
     - [no](deny)
-    - [nah](deny), thanks
+    - [no](deny), thanks
+    - [No](deny) thanks
+    - [no]{"entity": "deny", "value": "no"} [bye](goodbyes)
+    - nope
+    - I do not think so
+    - Don't think so
+    - Probably [no](deny)
 - intent: affirm
   examples: |
     - [yes](agree)
@@ -41,23 +77,37 @@ nlu:
     - ok
     - yeah okay
     - okay
+    - i guess so
+    - That's a good idea
+    - Yeah i can handle that
+    - I am fine
+    - I think so
+    - Probably [yes](agree)
+    - Sounds good
+    - Sounds okay
+    - ahhaa
 - intent: mood_pressured
   examples: |
     - I feel [pressured](pressured mood) at work
-    - Not great. I feel pressured at work.
+    - Not great. I feel [pressured](pressured mood)  at work.
     - I have so many deadlines next week. I feel [overwhelmed](pressured mood).
     - [Not great](sad mood). I feel [pressured](pressured mood) at work
     - depressed
     - [yes](agree) my pressure at work
-    - i feel pressured
+    - i feel [pressured](pressured mood)
     - i feel overwhelmed
     - too many deadlines
-    - i feel stressful;
-    - I feel pressured
-    - i feel pressured at work
-    - i feel stressed
-    - [yes](agree) I still feel pressured at work
-    - I feel overwhelmed at work
+    - i feel stressful
+    - i feel pressured](pressured mood) at work
+    - i feel pressured](pressured mood)
+    - [yes](agree) I still feel pressured](pressured mood) at work
+    - I feel pressured](pressured mood) at work
+    - because i am [pressured](pressured mood)
+    - i am stressed
+    - i have work
+    - i feel tired
+    - I experience [pressured](pressured mood)
+    - I'm feeling preassured at work
 - intent: mood_more_details
   examples: |
     - I hate
@@ -72,14 +122,21 @@ nlu:
     - i have to hand in the report by the end of tomorrow
     - i have to hand in another one the next day
     - I have too many deadlines
+    - i have deadline on thursday
+    - i have deadlines
+    - I have a lot of deadlines, meetings and I don't have time for myself
+    - Yeah i have to hand in a lot of deadlines with some big clients
+    - i have a lot of deadlines
 - intent: mood_desperate
   examples: |
     - I do not know tbh. I tried a lot of different things
     - I have no clue
     - idk
     - I do not care anymore
-    - IT is too much for me
+    - It is too much for me
     - i do not know
+    - I think I do, but at some point the pressure is too much
+    - Dont know for sure, i have a lot of deadlines
 - intent: mood_suggestion
   examples: |
     - More sleeping hours maybe
@@ -87,6 +144,9 @@ nlu:
     - Healthy lifestyle
     - Vacation days
     - Maybe I can take vacation
+    - Yeah i think if i spread my work load i will be able to
+    - maybe
+    - i guess
 - intent: suicide
   examples: |
     - I want to kill myself
@@ -105,18 +165,19 @@ nlu:
     - what is ur name
 - intent: bot_question
   examples: |
-    - How are [you]?
-    - Wassap with [you]?
+    - How are [you](ask bot)?
+    - Wassap with [you](ask bot)?
     - Whatchu doin?
-    - What are [you] doing?
+    - What are [you](ask bot) doing?
     - Wassap?
-    - Where did [you] study?
-    - What do [you] do for living?
-    - Do [you] have a family?
-    - Are [you] married?
-    - how are you doing?
-    - how many kids do u have
+    - Where did [you](ask bot) study?
+    - What do [you](ask bot) do for living?
+    - Do [you](ask bot) have a family?
+    - Are [you](ask bot) married?
+    - how are [you](ask bot) doing?
+    - how many kids do [you](ask bot) have
     - actually wait  a sec
+    - Hi rassa, how are [you](ask bot) doing?
 - intent: thank_you
   examples: |
     - Thank [you]
@@ -126,10 +187,26 @@ nlu:
     - thank [you]
     - nope denks
     - thank you
+    - Thanks for your help
 - intent: greet_wassap
   examples: |
     - WASSAP
     - wassap
+- intent: mood_advice
+  examples: |
+    - What else can i try to get the stress out
+- synonym: no
+  examples: |
+    - nah
+    - Not really
+    - n
+    - nope
+    - I do not think so
+    - I don't think so
+    - I disagree
+    - Nah
+    - I rather not
+    - Nee
 - synonym: hi
   examples: |
     - hello
@@ -169,21 +246,11 @@ nlu:
     - Not great
 - synonym: pressured
   examples: |
-    - I feel overwhelmed
     - overwhelmed
     - stressed
-- synonym: no
-  examples: |
-    - Not really
-    - n
-    - nope
-    - I do not think so
-    - I don't think so
-    - I disagree
-    - Nah
-    - I rather not
-    - Nee
-    - nah
+    - pressure
+    - stress
+    - tired
 - synonym: yes
   examples: |
     - ye
@@ -195,12 +262,6 @@ nlu:
     - YAY!
     - OMG yes
     - yeap
-- synonym: name
-  examples: |
-    - Steve
-    - John
-    - Kate
-    - Aydan
 - synonym: you
   examples: |
     - jij

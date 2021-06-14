@@ -2,6 +2,147 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
+- story: elaborate 1
+  steps:
+  - user: |
+      Bonjour :)
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I am not doing good, but it is ok
+    intent: mood_unhappy
+  - action: utter_what_happened
+  - user: |
+      I feel pressured at work. 
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_more_details
+  - user: |
+      I have important meeting on monday
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      I guess so
+    intent: affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: Magic beans?
+    intent: mood_sarcasm
+  - action: utter_will_that_help
+  - user: |
+      Yes, thank u. I will try that
+    intent: thank_you
+  - action: utter_welcome
+  - action: utter_ask_feelings
+  - user: |
+      Probably, yes
+    intent: affirm_feelings
+  - action: utter_anything_else
+  - user: |
+      Nah, I am fine
+    intent: deny
+  - action: utter_goodbye
+
+- story: elaborate 2
+  steps:
+  - user: |
+      Hi, Rasa!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not my best
+    intent: mood_unhappy
+  - action: utter_what_happened
+  - user: |
+      I feel pressured at work. 
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_more_details
+  - user: |
+      Too many eadlines and meetings
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      Probably, yes
+    intent: affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: Magic beans?
+    intent: mood_sarcasm
+  - action: utter_will_that_help
+  - user: |
+      Yes, thank u. I will try that
+    intent: thank_you
+  - action: utter_welcome
+  - action: utter_ask_feelings
+  - user: |
+      I am kinda tired
+    intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      Sounds good. 
+    intent: affirm
+  - action: utter_ask_feelings
+  - user: | 
+      I guess I am fine now
+    intent: affirm_feelings
+  - action: utter_anything_else
+  - user: |
+      Don't think so
+    intent: deny
+  - action: utter_goodbye
+
+- story: elaborate 3
+  steps:
+  - user: |
+      Hi, Rasa!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Not my best
+    intent: mood_unhappy
+  - action: utter_what_happened
+  - user: |
+      I feel pressured at work. 
+    intent: mood_pressured
+  - action: utter_long_sympathize
+  - action: utter_more_details
+  - user: |
+      Too many eadlines and meetings
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_will_u_handle
+  - user: |
+      Probably, yes
+    intent: affirm
+  - action: utter_short_sympathize 
+  - action: utter_what_will_help
+  - user: I guess I can try and fix my sleeping schedule
+    intent: mood_suggestion
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      lol
+    intent: affirm
+  - action: utter_ask_feelings
+  - user: |
+      I hate my job
+    intent: mood_more_details
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      Sounds good. 
+    intent: affirm
+  - action: utter_ask_feelings
+  - user: | 
+      I am ok now
+    intent: affirm_feelings
+  - action: utter_anything_else
+  - user: |
+      Yes
+    intent: affirm
+  - action: utter_more_details
+
 - story: pressured at work 1
   steps:
   - user: |
@@ -35,6 +176,10 @@ stories:
       Yes, thank u. I will try that
     intent: thank_you
   - action: utter_welcome
+  - action: utter_ask_feelings
+  - user: |
+      Nah
+    intent: deny_feelings
   - action: utter_anything_else
   - user: |
       Bye
@@ -82,59 +227,47 @@ stories:
       Aahah. Okay. I will try that. Thanks a LOT
     intent: thank_you
   - action: utter_welcome
-  - action: utter_anything_else
+  - action: utter_ask_feelings
   - user: |
-      Nope. Bye
-    intent: goodbye
-  - action: utter_goodbye
+      I feel like I cant really handle the pressure. Too much work
+    intent: mood_desperate
+  - action: utter_that_is_what_she_said_meme
+  - user: |
+      Idk, my boss freaks me out. I am very tired. And pressure is too much
+    intent: mood_share_work
+  - action: utter_chandler_meme
+  - action: utter_long_sympathize
+  - action: utter_more_details
+
 
 - story: pressured at work 3
   steps:
   - user: |
-      Hoi!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      Too much work, too little time. Have six deadlines and project plan to hand in.
+      I experience stress lately
+    intent: mood_pressured
+  - action: utter_what_happened
+  - user: I have lots of deadlines
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
   - user: |
-      Yes, I am just so tired
-    intent: affirm
-  - action: utter_short_sympathize 
-  - action: utter_what_will_help
-  - user: |
-      More sleeping hours maybe.
-    intent: mood_suggestion
+      idk
+    intent: mood_desperate
   - action: utter_that_is_what_she_said_meme
   - user: |
-      Yeah, lol. Thanks a lot
-    intent: thank_you
-  - action: utter_welcome
-  - action: utter_anything_else
-  - user: |
-      NAH. Bye-bye
-    intent: goodbye
-  - action: utter_goodbye
+      yeah, i do not think that will help me, unfortunately
+    intent: mood_desperate
+  - action: utter_more_details
+
 
 - story: pressured at work 4
   steps:
   - user: |
-      Hoi!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      Not great. I feel pressured at work
+      I am very overwhelmed
     intent: mood_pressured
   - action: utter_what_happened
   - user: |
-      I feel overwhelmed.
-    intent: mood_pressured
-  - action: utter_long_sympathize
-  - action: utter_more_details
-  - user: |
-      I have a lot of meetings with clients. 
+      I have lots of deadlines
     intent: mood_share_work
   - action: utter_chandler_meme
   - action: utter_will_u_handle
@@ -145,15 +278,11 @@ stories:
   - user: |
       Because it is just too much for me. I am tired.
     intent: mood_desperate
-  - action: utter_that_is_what_she_said_meme
+  - action: utter_that_is_what_she_said_meme 
   - user: |
-      yes
-    intent: affirm
-  - action: utter_anything_else
-  - user: |
-      Goodbye
-    intent: goodbye
-  - action: utter_goodbye
+      yeah, i do not think that will help me, unfortunately
+    intent: mood_desperate
+  - action: utter_more_details
 
 - story: bot questions
   steps: 
@@ -176,9 +305,9 @@ stories:
 - story: happy path 1
   steps:
   - user: |
-      hello there!
+      WASSAP!
     intent: greet
-  - action: utter_greet
+  - action: utter_greet_wassap
   - user: |
       amazing
     intent: mood_great
@@ -197,3 +326,17 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: bot name
+  steps:
+  - user: |
+      what is ur name
+    intent: bot_name
+  - action: utter_bot_name
+
+- story: bot question
+  steps:
+  - user: |
+      do u have kids?
+    intent: bot_question
+  - action: utter_bot_question

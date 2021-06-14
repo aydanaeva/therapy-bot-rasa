@@ -9,13 +9,13 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 100
+  epochs: 50
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  epochs: 100
+  epochs: 50
 policies:
 - name: TEDPolicy
-  epochs: 100
+  epochs: 50
 - name: AugmentedMemoizationPolicy
   max_history: 3
 - name: RulePolicy

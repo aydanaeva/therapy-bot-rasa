@@ -41,6 +41,12 @@ intents:
     use_entities: true
 - suicide:
     use_entities: true
+- affirm_feelings:
+    use_entities: true
+- mood_advice:
+    use_entities: true
+- deny_feelings:
+    use_entities: true
 entities:
 - greeting
 - goodbyes
@@ -48,27 +54,24 @@ entities:
 - sad mood
 - deny
 - agree
-- name
 - pressured mood
-slots:
-  name:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
+- ask bot
+slots: {}
 responses:
   utter_greet:
-  - text: Hey {name}! How are you feeling today?
+  - text: Hey! How are you feeling today?
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   utter_sarcasm:
   - text: Fair, lol.
   - text: LMAO
+  - text: lol
   utter_will_that_help:
   - text: It is completely fine to feel overwhelmed at work. Everyone that I know had this at some point in their lives. What I do when I feel that way is to make precise planning for every day and trying to get my sleep schedule fixed. Do u think that might help u?
   utter_happy:
   - text: Great, carry on!
+  - text: Happy to hear that!
   utter_goodbye:
   - text: Bye
   - text: Goodluck :)
@@ -78,11 +81,22 @@ responses:
   utter_that_is_what_she_said_meme:
   - image: https://i2.wp.com/www.coopers-seafood.com/wp-content/uploads/2019/12/thats-what-she-said-sticker.png?fit=600%2C600&ssl=1
     text: Feeling overwhelmed is completely normal. A lot of people I know feel overwhelmed because they struggle with work/life balance. When I feel stressed, I usually take an evening completely off to Netflix & chill.  I just try not to make it hard on myself
+  - text: Usually when I feel that way I try to start my day with a nice breakfast and just take things slowly
+  - text: Your feelings are normal. Just try to take things slow.
   utter_chandler_meme:
   - image: https://imgix.bustle.com/rehost/2016/9/13/ad641958-cb54-42aa-b7cc-be3df328c51e.png?w=800&fit=crop&crop=faces&auto=format%2Ccompress
     text: Oh man, could you BE any busier?
+  - text: U do be busy, huh?
+  - text: You seem pretty busy
+  - text: Quite a tight schedule :(
   utter_what_happened:
   - text: I am sorry to hear that. What happened?
+  - text: Oh :( What happened?
+  - text: Sorry to hear that :( Why do u feel that way?
+  utter_do_u_feel_that_way:
+  - text: Why do u think so?
+  - text: Do u feel that way?
+  - text: Are u sure about that?
   utter_long_sympathize:
   - text: I feel overwhelmed too sometimes...I remember back in my college days, I had to prepare lots of presentations and essays. But the most stressful thing was the tests. A lot of people feel pressure at work. Ur feelings r totally valid.
   - text: I absolutely get u. At my previous job I did a lot of overtime, and not even because of my own fault. I had waaaay too many responsibilities for one person and was constantly stressed.
@@ -98,7 +112,10 @@ responses:
   - text: Could u specify that?
   - text: Can u tell me more?
   - text: Please continue.
-  - text: Why do u feel that way?
+  - text: Could you please elaborate on that?
+  utter_ask_feelings:
+  - text: Are u sure that it is all how u feel?
+  - text: Is that all u experience about the issue?
   utter_will_u_handle:
   - text: Do u feel that u will be able to handle the pressure eventually?
   - text: Do u feel u can handle that?
